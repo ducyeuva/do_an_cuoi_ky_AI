@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Nhận dạng chữ số và phép tính cơ bản</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"> </script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+
+<body>
+  <h1>Nhận dạng chữ số và phép tính cơ bản</h1>
+  <p>*Áp dụng với phép tính có 1 chữ số</p>
+  <div class='display'>
+    <!-- Nhận dạng số thứ 1 -->
+    <section>
+      <canvas id="first-canvas" width="200" height="200"></canvas>
+      <button id="first-erase">Clear</button>
+      <canvas id="first-small-canvas" width="28" height="28"></canvas>
+    </section>
+    <!-- Nhận dạng dấu thứ 1 -->
+    <section class="btn1">
+      <button id="addition" onclick="addition()">+</button>
+      <button id="subtraction" onclick="subtraction()">-</button>
+      <button id="multiplication" onclick="multiplication()">*</button>
+      <button id="division" onclick="division()">/</button>
+     <!-- <button id="all-erase" onclick="all_erase()" style="margin-top: 40px;">Clear all</button> -->
+    </section>
+    <!-- Nhận dạng số thứ 2 -->
+    <section class="btn1">
+      <canvas id="second-canvas" width="200" height="200"></canvas>
+      <button id="second-erase">Clear</button>
+      <canvas id="second-small-canvas" width="28" height="28"></canvas>
+    </section>
+    <!-- Nhận dạng dấu thứ 3 -->
+    <section class="btn1">
+      <button id="addition" onclick="addition1()">+</button>
+      <button id="subtraction" onclick="subtraction1()">-</button>
+      <button id="multiplication" onclick="multiplication1()">*</button>
+      <button id="division" onclick="division1()">/</button>
+    </section>
+    <!-- Nhận dạng số thứ 3-->
+    <section>
+      <canvas id="third-canvas" width="200" height="200"></canvas>
+      <button id="third-erase">Clear</button>
+      <canvas id="third-small-canvas" width="28" height="28"></canvas>
+    </section>
+    <section class="nut">
+      <button id="all-erase"  onclick="all_erase()" >Clear all</button> 
+    </section>
+    
+  </div>
+  
+  <div class='display'>
+    <!-- Nhận dạng số thứ 1 -->
+    <section>
+      <div id="first-prediction"></div>
+    </section>
+    <!-- Nhận dạng dấu thứ 1 -->
+    <section>
+      <div id="operator"  style="font-size: 150px;"></div>
+    </section>
+    <!-- Nhận dạng số thứ 2 -->
+    <section>
+      <div id="second-prediction"></div>
+    </section>
+    <!-- Nhận dạng dấu thứ 2-->
+    <section>
+      <div id="operator1" style="font-size: 150px;"></div>
+    </section>
+    <!-- Nhận dạng số thứ 3 -->
+    <section>
+      <div id="third-prediction"></div>
+    </section>
+    <!-- Kết quả -->
+    <section>
+      <div style="font-size: 150px;">=</div>
+    </section>
+    <section>
+      <div id="result" style="width: 300px;"></div>
+    </section>
+  </div>
+
+  
+  <script src="script.js"></script>
+  <div class="nuttt">
+    <button class="btn btn-warning"><a href="./index.html">Trang chủ </a></button>
+  </div>
+
+</body>
+
+</html>
