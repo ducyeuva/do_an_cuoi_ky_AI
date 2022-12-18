@@ -21,3 +21,5 @@ Link video demo:
 [Demo câu 1](https://youtu.be/x-gwLQIH_X4)
 
 [Demo câu 2](https://youtu.be/9qZJ1JdLSIk)
+
+Link lấy tập dataset: https://www.kaggle.com/datasets/oddrationale/mnist-in-csv
