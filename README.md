@@ -16,10 +16,5 @@ Các thành viên của nhóm 1 ca 1 năm học 2022 - 2023 (AI.SP.1.22-23.1)
 | Lê Thị Hải Anh         | 46.01.103.003 |             |
 | Phạm Khắc Vỹ           | 46.01.103.083 |             |
 
-Link video demo:
-
-[Demo câu 1](https://youtu.be/x-gwLQIH_X4)
-
-[Demo câu 2](https://youtu.be/9qZJ1JdLSIk)
 
 Link lấy tập dataset: https://www.kaggle.com/datasets/oddrationale/mnist-in-csv
